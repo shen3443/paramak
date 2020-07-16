@@ -98,3 +98,51 @@ ExtrudeCircleShape()
 .. automodule:: paramak.parametric_shapes.extruded_circle_shape
    :members:
    :show-inheritance:
+
+SweepStraightShape()
+^^^^^^^^^^^^^^^^^^^^
+
+.. image::
+   :width: 200
+   :height: 250
+   :align: center
+
+.. automodule:: paramak.parametric_shapes.sweep_straight_shape
+   :members:
+   :show-inheritance:
+
+SweepSplineShape()
+^^^^^^^^^^^^^^^^^^
+
+.. image::
+   :width: 200
+   :height: 250
+   :align: center
+
+.. automodule:: paramak.parametric_shapes.sweep_spline_shape
+   :members:
+   :show-inheritance:
+
+SweepMixedShape()
+^^^^^^^^^^^^^^^^^
+
+.. image::
+   :width: 200
+   :height: 250
+   :align: center
+
+.. automodule:: paramak.parametric_shapes.sweep_mixed_shape
+   :members:
+   :show-inheritance:
+
+SweepCircleShape()
+^^^^^^^^^^^^^^^^^^
+
+.. image::
+   :width: 200
+   :height: 250
+   :align: center
+
+.. automodule:: paramak.parametric_shapes.sweep_circle_shape
+   :members:
+   :show-inheritance:
