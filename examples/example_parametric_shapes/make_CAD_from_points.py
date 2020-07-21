@@ -131,9 +131,11 @@ def main():
             (-50, 0)
         ],
         path_points = [
-            (450, 0),
-            (250, 500),
-            (450, 1000)
+            (50, 0),
+            (150, 400),
+            (400, 500),
+            (650, 600),
+            (750, 1000)
         ],
         workplane = "XY",
         path_workplane = "XZ"
@@ -145,17 +147,21 @@ def main():
     # this makes a banana shape with spline edges and sweeps it along a spline to make a solid
     sweep_spline = paramak.SweepSplineShape(
         points=[
-            (-150, 300),
-            (-50, 300),
             (50, 0),
+            (50, -20),
             (-50, -300),
             (-150, -300),
-            (-50, 0)
+            (-50, 0),
+            (-150, 300),
+            (-50, 300),
+            (50, 20)
         ],
         path_points = [
-            (450, 0),
-            (250, 500),
-            (450, 1000)
+            (50, 0),
+            (150, 400),
+            (400, 500),
+            (650, 600),
+            (750, 1000)
         ],
         workplane = "XY",
         path_workplane = "XZ"
@@ -176,9 +182,11 @@ def main():
             (-70, -5, "spline")
         ],
         path_points = [
-            (450, 0),
-            (250, 500),
-            (450, 1000)
+            (50, 0),
+            (150, 400),
+            (400, 500),
+            (650, 600),
+            (750, 1000)
         ],
         workplane = "XY",
         path_workplane = "XZ"
@@ -189,11 +197,13 @@ def main():
 
     # this makes a circular shape and sweeps it to make a solid
     sweep_circle = paramak.SweepCircleShape(
-        radius = 20,
+        radius = 40,
         path_points = [
-            (450, 0),
-            (250, 500),
-            (450, 1000)
+            (50, 0),
+            (150, 400),
+            (400, 500),
+            (650, 600),
+            (750, 1000)
         ],
         workplane = "XY",
         path_workplane = "XZ"
