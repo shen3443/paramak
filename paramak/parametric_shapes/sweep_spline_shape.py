@@ -43,8 +43,8 @@ class SweepSplineShape(Shape):
         self,
         points,
         path_points,
-        path_workplane="XY",
-        workplane="XZ",
+        path_workplane="XZ",
+        workplane="XY",
         stp_filename=None,
         solid=None,
         color=None,
@@ -178,7 +178,7 @@ class SweepSplineShape(Shape):
             # Perform seperate rotations for each angle
             for angle in self.azimuth_placement_angle:
                 rotated_solids.append(solid.rotate((0, 0, -1), (0, 0, 1), angle))
-            solid = cq.Workplane(self.path_workplane)   # think this should be self.path_workplane as we don't want to rotate in the plane of the face
+            solid = cq.Workplane(self.path_workplane)   # rotate in plane of the path, NOT the face
 
             # Joins the seperate solids together
             for i in rotated_solids:
