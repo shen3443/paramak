@@ -45,11 +45,11 @@ The different families of shapes that can be made with the Paramak are shown in 
 </p>
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/8583900/86237379-90136c00-bb93-11ea-80fb-54e2dab74819.gif" width="800" height="300">
+<img src="https://user-images.githubusercontent.com/8583900/88866536-e57a8180-d202-11ea-8e3f-2662973c6f69.gif" width="800" height="300">
 </p>
 
 
-|                                                         | Rotate                                                                                                                                 | Extrude                                                                                                                                   |
+|                                                         | Rotate                                                                                                                                 | Extrude                                                                                                                                   | Sweep                                                                                                                                  |
 |---------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | Points connected with straight lines                    | <p align="center"><img src="https://user-images.githubusercontent.com/8583900/86246786-767a2080-bba3-11ea-90e7-22d816690caa.png" height="120"></p> `RotateStraightShape()` | <p align="center"><img src="https://user-images.githubusercontent.com/8583900/86246776-724e0300-bba3-11ea-91c9-0fd239225206.png" height="120"></p>  `ExtrudeStraightShape()` | <p align="center"><img src="https://user-images.githubusercontent.com/56687624/88060232-e0ac3280-cb5d-11ea-8bfe-b1db5f89a0d4.png" height="120"></p> `SweepStraightShape()` |
 | Points connected with spline curves                     | <p align="center"><img src="https://user-images.githubusercontent.com/8583900/86246785-7548f380-bba3-11ea-90b7-03249be41a00.png" height="120"></p>  `RotateSplineShape()`      | <p align="center"><img src="https://user-images.githubusercontent.com/8583900/86246774-71b56c80-bba3-11ea-94cb-d2496365ff18.png" height="120"></p>  `ExtrudeSplineShape()`       | <p align="center"><img src="https://user-images.githubusercontent.com/56687624/88060236-e275f600-cb5d-11ea-87c3-330272a75904.png" height="120"></p> `SweepSplineShape()` |
