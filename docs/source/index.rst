@@ -87,11 +87,17 @@ The different families of shapes that can be made with the Paramak are shown in 
 .. |extrudestraight| image:: https://user-images.githubusercontent.com/56687624/87055493-56c6a600-c1fc-11ea-8c58-f5b62ae72e0e.png
                           :height: 200px
 
+.. |sweepstraight| image:: https://user-images.githubusercontent.com/56687624/88060232-e0ac3280-cb5d-11ea-8bfe-b1db5f89a0d4.png
+                        :height: 200px
+
 .. |rotatespline| image:: https://user-images.githubusercontent.com/56687624/87055473-50382e80-c1fc-11ea-95dd-b4932b1e78d9.png
                           :height: 200px
 
 .. |extrudespline| image:: https://user-images.githubusercontent.com/56687624/87055500-58906980-c1fc-11ea-879c-9f1845be3b57.png
                           :height: 200px
+
+.. |sweepspline| image:: https://user-images.githubusercontent.com/56687624/88060236-e275f600-cb5d-11ea-87c3-330272a75904.png
+                        :height: 200px
 
 .. |rotatecircle| image:: https://user-images.githubusercontent.com/56687624/87055489-54fce280-c1fc-11ea-9545-a61582aea20a.png
                           :height: 200px
@@ -99,53 +105,59 @@ The different families of shapes that can be made with the Paramak are shown in 
 .. |extrudecircle| image:: https://user-images.githubusercontent.com/56687624/87055517-5b8b5a00-c1fc-11ea-83ef-d4329c6815f7.png
                           :height: 200px
 
+.. |sweepcircle| image:: https://user-images.githubusercontent.com/56687624/88064426-2d463c80-cb63-11ea-980b-29f8c010c2bf.png
+                  :height: 200px
+
 .. |rotatemixed| image:: https://user-images.githubusercontent.com/56687624/87055483-53cbb580-c1fc-11ea-878d-92835684c8ff.png
                           :height: 200px
 
 .. |extrudemixed| image:: https://user-images.githubusercontent.com/56687624/87055511-59c19680-c1fc-11ea-8740-8c7987745c45.png
                           :height: 200px
 
+.. |sweepmixed| image:: https://user-images.githubusercontent.com/56687624/88064419-2b7c7900-cb63-11ea-901f-a7f8596e1f00.png
+                     :height: 200 px
 
 
-+-----------------------------------------------------------+-----------------------------------------------------------+------------------------------------------------------------+
-|                                                           | Rotate                                                    | Extrude                                                    |
-+===========================================================+===========================================================+============================================================+
-| Points connected with straight lines                      | |rotatestraight|                                          | |extrudestraight|                                          |
-|                                                           |                                                           |                                                            |
-|                                                           |                                                           |                                                            |
-|                                                           |                                                           |                                                            |
-|                                                           |                                                           |                                                            |
-|                                                           | ::                                                        | ::                                                         |
-|                                                           |                                                           |                                                            |
-|                                                           |     RotateStraightShape()                                 |     ExtrudeStraightShape()                                 |
-+-----------------------------------------------------------+-----------------------------------------------------------+------------------------------------------------------------+
-| Points connected with spline curves                       | |rotatespline|                                            | |extrudespline|                                            |
-|                                                           |                                                           |                                                            |
-|                                                           |                                                           |                                                            |
-|                                                           |                                                           |                                                            |
-|                                                           |                                                           |                                                            |
-|                                                           | ::                                                        | ::                                                         |
-|                                                           |                                                           |                                                            |
-|                                                           |     RotateSplineShape()                                   |     ExtrudeSplineShape()                                   |
-+-----------------------------------------------------------+-----------------------------------------------------------+------------------------------------------------------------+
-| Points connected with a circles                           | |rotatecircle|                                            | |extrudecircle|                                            |
-|                                                           |                                                           |                                                            |
-|                                                           |                                                           |                                                            |
-|                                                           |                                                           |                                                            |
-|                                                           |                                                           |                                                            |
-|                                                           | ::                                                        | ::                                                         |
-|                                                           |                                                           |                                                            |
-|                                                           |     RotateCircleShape()                                   |     ExtrudeCircleShape()                                   |
-+-----------------------------------------------------------+-----------------------------------------------------------+------------------------------------------------------------+
-| Points connected with a mixture                           | |rotatemixed|                                             | |extrudemixed|                                             |
-|                                                           |                                                           |                                                            |
-| ::                                                        |                                                           |                                                            |
-|                                                           |                                                           |                                                            |
-| (splines, straights and circles)                          |                                                           |                                                            |
-|                                                           | ::                                                        | ::                                                         |
-|                                                           |                                                           |                                                            |
-|                                                           |     RotateMixedShape()                                    |     ExtrudeMixedShape()                                    |
-+-----------------------------------------------------------+-----------------------------------------------------------+------------------------------------------------------------+
+
++-----------------------------------------------------------+-----------------------------------------------------------+------------------------------------------------------------+-----------------------------------------------------------+
+|                                                           | Rotate                                                    | Extrude                                                    | Sweep                                                     |
++===========================================================+===========================================================+============================================================+===========================================================+
+| Points connected with straight lines                      | |rotatestraight|                                          | |extrudestraight|                                          | |sweepstraight|                                           |
+|                                                           |                                                           |                                                            |                                                           |
+|                                                           |                                                           |                                                            |                                                           |
+|                                                           |                                                           |                                                            |                                                           |
+|                                                           |                                                           |                                                            |                                                           |
+|                                                           | ::                                                        | ::                                                         | ::                                                        |
+|                                                           |                                                           |                                                            |                                                           |
+|                                                           |     RotateStraightShape()                                 |     ExtrudeStraightShape()                                 |     SweepStraightShape()                                  |
++-----------------------------------------------------------+-----------------------------------------------------------+------------------------------------------------------------+-----------------------------------------------------------+
+| Points connected with spline curves                       | |rotatespline|                                            | |extrudespline|                                            | |sweepspline|                                             |
+|                                                           |                                                           |                                                            |                                                           |
+|                                                           |                                                           |                                                            |                                                           |
+|                                                           |                                                           |                                                            |                                                           |
+|                                                           |                                                           |                                                            |                                                           |
+|                                                           | ::                                                        | ::                                                         | ::                                                        |
+|                                                           |                                                           |                                                            |                                                           |
+|                                                           |     RotateSplineShape()                                   |     ExtrudeSplineShape()                                   |     SweepSplineShape()                                    |
++-----------------------------------------------------------+-----------------------------------------------------------+------------------------------------------------------------+-----------------------------------------------------------+
+| Points connected with a circles                           | |rotatecircle|                                            | |extrudecircle|                                            | |sweepcircle|                                             |
+|                                                           |                                                           |                                                            |                                                           |
+|                                                           |                                                           |                                                            |                                                           |
+|                                                           |                                                           |                                                            |                                                           |
+|                                                           |                                                           |                                                            |                                                           |
+|                                                           | ::                                                        | ::                                                         | ::                                                        |
+|                                                           |                                                           |                                                            |                                                           |
+|                                                           |     RotateCircleShape()                                   |     ExtrudeCircleShape()                                   |     SweepCircleShape()                                    |
++-----------------------------------------------------------+-----------------------------------------------------------+------------------------------------------------------------+-----------------------------------------------------------+
+| Points connected with a mixture                           | |rotatemixed|                                             | |extrudemixed|                                             | |sweepmixed|                                              |
+|                                                           |                                                           |                                                            |                                                           |
+| ::                                                        |                                                           |                                                            |                                                           |
+|                                                           |                                                           |                                                            |                                                           |
+| (splines, straights and circles)                          |                                                           |                                                            |                                                           |
+|                                                           | ::                                                        | ::                                                         | ::                                                        |
+|                                                           |                                                           |                                                            |                                                           |
+|                                                           |     RotateMixedShape()                                    |     ExtrudeMixedShape()                                    |     SweepMixedShape()                                     |
++-----------------------------------------------------------+-----------------------------------------------------------+------------------------------------------------------------+-----------------------------------------------------------+
 
 
 Usage - Parametric Shapes
