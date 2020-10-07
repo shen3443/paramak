@@ -389,3 +389,17 @@ ToroidalFieldCoilTripleArc()
 .. automodule:: paramak.parametric_components.toroidal_field_coil_triple_arc
    :members:
    :show-inheritance:
+
+VacuumVessel()
+^^^^^^^^^^^^^^
+
+|VacuumVesselstp| |VacuumVesselstl|
+
+.. |VacuumVesselstp| image:: https://user-images.githubusercontent.com/8583900/95368483-1a274b00-08ce-11eb-95b4-e7806d594f84.png
+   :width: 300
+.. |VacuumVesselstl| image:: https://user-images.githubusercontent.com/8583900/95367000-1d213c00-08cc-11eb-9f0b-02242eda3b63.png
+   :width: 450
+
+.. automodule:: paramak.parametric_components.vacuum_vessel
+   :members:
+   :show-inheritance:
