@@ -131,7 +131,33 @@ class BallReactor(paramak.Reactor):
         self.make_component_cuts(shapes_or_components)
 
         self.shapes_and_components = shapes_or_components
+    
+    @property
+    def pf_coil_radial_thickness(self):
+        return self.pf_coil_radial_thickness
+    
+    @pf_coil_radial_thickness.setter
+    def pf_coil_radial_thickness(self, values):
+        if values is None:
+            self.pf_coil_radial_thickness = values
+        elif not isinstance(values, list):
+            raise ValueError("pf_coil_radial_thickness must be a list")
+        else:
+            self.pf_coil_radial_thickness = values
 
+    @property
+    def pf_coil_vertical_thickness(self):
+        return self.pf_coil_vertical_thickness
+
+    @pf_coil_vertical_thickness.setter
+    def pf_coil_vertical_thickness(self, values):
+        if values is None:
+            self.pf_coil_vertical_thickness = values
+        elif not isinstance(values, list):
+            raise ValueError("pf_coil_vertical_thickness must be a list")
+        else:
+            self.pf_coil_vertical_thickness = values
+    
     def rotation_angle_check(self):
 
         if self.rotation_angle == 360:
